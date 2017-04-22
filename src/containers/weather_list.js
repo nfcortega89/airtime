@@ -12,11 +12,18 @@ class WeatherList extends Component {
     // })
     this.props.fetchWeather()
   }
-  renderWeather(locations) {
+  renderWeather(rawLocations) {
+    const locations = rawLocations.map((location, index) => {
+      location.data['index'] = index
+      return location
+    })
+    locations.sort(function (a, b) {
+      return a.data.wind.speed - b.data.wind.speed;
+    });
     return locations.map(({ data }, index) => {
       return (
         <tr>
-          <td className="name">{areas[index].name}</td>
+          <td className="name"><a target="_blank" href={`https://www.google.com/maps/place/${data.coord.lat},${data.coord.lon}`}>{areas[data.index].name}</a></td>
           <td><GoogleMap lat={data.coord.lat} lon={data.coord.lon}/></td>
           <td className="temp">{Math.floor(data.main.temp)}&deg; </td>
           <td className="precipitation">{data.main.humidity}</td>
