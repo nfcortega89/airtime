@@ -20,6 +20,11 @@
 }
 .navbar {
 	color: black;
+	position: fixed;
+  width: 100%;
+  padding-right: 10px;
+  top: 0;
+  z-index: 100;
 }
 .text-header {
 	padding-left: 3rem;
