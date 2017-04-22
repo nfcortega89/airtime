@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'CircularAirPro Book';
+	src: url('../style/CircularAirProBook/CircularAirPro-Book.eot');
+	src: url('../style/CircularAirProBook/CircularAirPro-Book.eot?#iefix') format('embedded-opentype'),
+		url('../style/CircularAirProBook/CircularAirPro-Book.woff') format('woff'),
+		url('../style/CircularAirProBook/CircularAirPro-Book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+  font-family: 'CircularAirPro Book';
+}
+.row {
+	width: 100%
+}
+.header-cta {
+	font-weight: bold;
+	color: black;
+}
+.navbar {
+	color: black;
+}
+.text-header {
+	padding-left: 3rem;
+  font-family: 'CircularAirPro Book';
+  font-weight: 900 !important;
+  color: #ff5a5f !important;
+  line-height: 56px !important;
+  letter-spacing: 2.2px !important;
+}
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+.city, .temp, .precipitation, .wind {
+  font-size: 2em;
+}
+.input-group {
+  margin: 20px 0px;
+}
+svg {
+  height: 150px;
+}
+
+td:nth-child(2), td:nth-child(2) > div {
+  height: 100px;
+  width: 100px;
+}

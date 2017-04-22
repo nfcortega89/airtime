@@ -1,0 +1,9 @@
+language: node_js
+node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: AvzGtJUwWFU/Fl9/n9A9ebTucq/m5c9xB1dpcK2KjYs0coGWXpAyFkw1q/RRMrFiswNPXhve06LvlwPBOLrxozLVvY9b/ari/jt8qnPKCyJdDdJrTO8Zk7rBPGCC6vPj87ZcNsjBfh9Q+8o6gbi/n+iKuwUqM+Wni/pSc/wdboANG1Uc1Wpj4fZcU20cn8quizEJcNhjOe3Rl94kpKWI8GiKPNVWxLJBcvSjvvZ8FWcOJJcqKXSVLr/jnf3kEhrxVh4kWbnT/d3GqAYXx0NrmVSIYmmLOq/eenskYNBe1I+isJvUXKhrNFs0ZjJEx0JuEEUSwrXFZa96j6JBoyKJI921uUvutZnjnbPWWvMfgjzWSQHIqz9VMOiroSdeRrVPqgz71+ELhyB0hZxpOnXGKEvtxeWLUB+1ni/O9ttWzRTTFHYCiFIn9H4CS8Xzqpi7FGpGoMIZFD/3XH47vcLemYt8JTzyshtn4/O47/UNCLoSQmN3wJgXlF9wPsxwKvdUxie4a6KFAfyjt4nIpanSoH6+KTq+Al702ElLDL33VVxOy5BqLM+KN7eIWDR/bDzW71I1tAPRTBNAdOyHEO/szriWZjHlpRqVSiic5ZWnEqX6o7V/iib6fKkH9oTRI0PRgwHnq1km0zGSfLy+4L9/pdpWPBeav0epfE/HvtHgxCE=
+  app: 'yes'
+  on:
+    repo: nfcortega89/weatherapp
