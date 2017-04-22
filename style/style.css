@@ -11,6 +11,9 @@
 * {
   font-family: 'CircularAirPro Book';
 }
+.container-fluid {
+	margin-top: 60px;
+}
 .row {
 	width: 100%
 }
