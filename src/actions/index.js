@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { areas } from '../../coordinates';
 const API_KEY = '4195135e9c7034878d78c6f4d7f1f88d';
-const ROOT_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}`;
+const ROOT_URL = `http://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}`;
 
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 
