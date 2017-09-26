@@ -1,11 +1,13 @@
 {
-  "name": "redux-simple-starter",
+  "name": "airtime",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description":
+    "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test":
+      "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
   "author": "",
@@ -36,5 +38,16 @@
     "redux": "^3.0.4",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfcortega89/airtime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nfcortega89/airtime/issues"
+  },
+  "homepage": "https://github.com/nfcortega89/airtime#readme"
 }

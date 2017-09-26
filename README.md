@@ -1,25 +1,40 @@
-# ReduxSimpleStarter
+Airtime is a frontend react app that shows users some of the legal fly-zones in San Diego along with the weather conditions.
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
 
-###Getting Started###
+<b>Getting Started</b>
 
-There are two methods for getting started with this repo.
+	Installing
 
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+    Git clone https://github.com/nfcortega89/airtime.git
+    Cd airtime
+    Npm install
 
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
+  Launching
+    <li>Npm start</li>
 
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+  Testing
+    <li>Npm test</li>
 
-```
-	> npm install
-	> npm start
-```
+<b>Introduction</b>
+
+	The main focus of Airtime is to make flying drones easier in San Diego. With this app, users can check to see if weather conditions are optimal for flying.
+
+<b>How it works</b>
+
+	Coordinates
+		There are preloaded coordinates which populate the fly-zones located in San Deigo
+
+	Weather
+		Airtime uses google maps to pinpoint each coordinate and uses real-time weather updates to show user wind speed, humidity and temperature
+
+<br></br>
+<b>Technology</b>
+
+	Frontend
+    HTML5
+    CSS3
+    Javascript
+
+ 	Backend
+    Node.js + Firebase
+    Continuous integration and deployment with Travis CI
