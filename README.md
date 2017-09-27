@@ -17,7 +17,11 @@ Airtime is a frontend react app that shows users some of the legal fly-zones in 
 
 <b>Introduction</b>
 
-	The main focus of Airtime is to make flying drones easier in San Diego. With this app, users can check to see if weather conditions are optimal for flying.
+Airtime is a powerful app made to help the user check
+weather conditions to make flying drones easier. With
+Airtime the user is given a variety of legal fly-zones in
+San Diego along with the current weather conditions, wind
+speed, and humidity.
 
 <b>How it works</b>
 
