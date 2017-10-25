@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-router";
+import ReactDOM from "react-router-dom";
 import { Provider } from "react-redux";
 import ReduxThunk from "redux-thunk";
 import { createStore, applyMiddleware } from "redux";
