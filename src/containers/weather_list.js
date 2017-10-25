@@ -42,7 +42,7 @@ class WeatherList extends Component {
     });
   }
   render() {
-    if (!this.props.fetchWeather) {
+    if (!this.props.weather) {
       <div className="loader" />;
     }
     return (
