@@ -7,9 +7,6 @@ import { areas } from "../../coordinates";
 
 class WeatherList extends Component {
   componentWillMount() {
-    // areas.forEach((city) => {
-    //   console.log(city.name)
-    // })
     this.props.fetchWeather();
   }
   renderWeather(rawLocations) {
@@ -44,7 +41,7 @@ class WeatherList extends Component {
   render() {
     if (!this.props.weather) {
       return (
-      <div class="loader" />;  
+      <div className="loader" />;
       )
     } else {
       return (
