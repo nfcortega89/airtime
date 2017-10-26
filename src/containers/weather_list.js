@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { connect } from "react-redux-dom";
+import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { fetchWeather } from "../actions/index";
 import GoogleMap from "../components/google_map";
