@@ -4,7 +4,6 @@ import { bindActionCreators } from "redux";
 import { fetchWeather } from "../actions/index";
 import GoogleMap from "../components/google_map";
 import { areas } from "../../coordinates";
-import "../style/style.css";
 
 class WeatherList extends Component {
   componentWillMount() {
@@ -45,7 +44,6 @@ class WeatherList extends Component {
   render() {
     return (
       <div className="main">
-        <div className="loader" />
         <div className="list-container">
           <ul />
         </div>
