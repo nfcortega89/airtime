@@ -42,6 +42,7 @@ class WeatherList extends Component {
     });
   }
   render() {
+    console.log("here");
     return (
       <div className="main">
         <div className="list-container">
