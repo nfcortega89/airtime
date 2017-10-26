@@ -43,7 +43,9 @@ class WeatherList extends Component {
   }
   render() {
     if (!this.props.weather) {
-      return <div className="loader" />;
+      return (
+      <div class="loader" />;  
+      )
     } else {
       return (
         <div className="main">
