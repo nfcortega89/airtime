@@ -39,7 +39,7 @@ class WeatherList extends Component {
     });
   }
   render() {
-    if (this.props.weather.length === undefined) {
+    if (!this.props.weather.length) {
       return <div>loading...</div>;
     } else
       return (
