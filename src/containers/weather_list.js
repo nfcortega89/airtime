@@ -39,31 +39,30 @@ class WeatherList extends Component {
     });
   }
   render() {
-    while (this.props.weather === undefined) {
+    if (typeof this.props.weather === "undefined") {
       return <div>loading...</div>;
-    } else {
-      return (
-        <div className="main">
-          <div className="list-container">
-            <ul />
-          </div>
-          <table className="table table-hover">
-            <thead>
-              <tr>
-                <th>Location</th>
-                <th>Map</th>
-                <th>Temperature (f)</th>
-                <th>Precipitation (%)</th>
-                <th>Wind (kts)</th>
-              </tr>
-            </thead>
-            <tbody className="table-hover">
-              {this.props.weather.map(this.renderWeather)}
-            </tbody>
-          </table>
-        </div>
-      );
     }
+    return (
+      <div className="main">
+        <div className="list-container">
+          <ul />
+        </div>
+        <table className="table table-hover">
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>Map</th>
+              <th>Temperature (f)</th>
+              <th>Precipitation (%)</th>
+              <th>Wind (kts)</th>
+            </tr>
+          </thead>
+          <tbody className="table-hover">
+            {this.props.weather.map(this.renderWeather)}
+          </tbody>
+        </table>
+      </div>
+    );
   }
 }
 
