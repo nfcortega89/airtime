@@ -7,9 +7,6 @@ import { areas } from "../../coordinates";
 
 class WeatherList extends Component {
   componentWillMount() {
-    // areas.forEach((city) => {
-    //   console.log(city.name)
-    // })
     this.props.fetchWeather();
   }
   renderWeather(rawLocations) {
@@ -42,27 +39,31 @@ class WeatherList extends Component {
     });
   }
   render() {
-    return (
-      <div className="main">
-        <div className="list-container">
-          <ul />
+    if (!this.props.weather !== undefined) {
+      return <div>loading...</div>;
+    } else {
+      return (
+        <div className="main">
+          <div className="list-container">
+            <ul />
+          </div>
+          <table className="table table-hover">
+            <thead>
+              <tr>
+                <th>Location</th>
+                <th>Map</th>
+                <th>Temperature (f)</th>
+                <th>Precipitation (%)</th>
+                <th>Wind (kts)</th>
+              </tr>
+            </thead>
+            <tbody className="table-hover">
+              {this.props.weather.map(this.renderWeather)}
+            </tbody>
+          </table>
         </div>
-        <table className="table table-hover">
-          <thead>
-            <tr>
-              <th>Location</th>
-              <th>Map</th>
-              <th>Temperature (f)</th>
-              <th>Precipitation (%)</th>
-              <th>Wind (kts)</th>
-            </tr>
-          </thead>
-          <tbody className="table-hover">
-            {this.props.weather.map(this.renderWeather)}
-          </tbody>
-        </table>
-      </div>
-    );
+      );
+    }
   }
 }
 
