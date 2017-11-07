@@ -1,12 +1,22 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router';
+import React, { Component } from "react";
+import { Link } from "react-router";
 
 export default class LandingPage extends Component {
-  render () {
+  render() {
     return (
       <div className="jumbotron">
         <h1>Time to fly drones!</h1>
-        <p>This MVP application provides drone users with a lists of flyzones along with current weather conditions.</p>
+        <ul>
+          <li>With Airtime you can find legal flyzones 3x faster.</li>
+          <li>
+            Airtime offers real time weather updates. Allowing users to select
+            ideal venue for lift-off!
+          </li>
+          <li>
+            Airtime provides Google Maps of flyzone areas as well as satellite
+            images of the terrains.
+          </li>
+        </ul>
         <h3>Select City</h3>
         <ul>
           <li>
@@ -20,8 +30,6 @@ export default class LandingPage extends Component {
           </li>
         </ul>
       </div>
-
-    )
+    );
   }
-
 }
